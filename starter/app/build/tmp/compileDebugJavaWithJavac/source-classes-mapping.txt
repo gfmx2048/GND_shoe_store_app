@@ -1,0 +1,20 @@
+com/udacity/shoestore/databinding/FragmentLoginBinding.java
+ com.udacity.shoestore.databinding.FragmentLoginBinding
+com/udacity/shoestore/databinding/FragmentLoginBindingImpl.java
+ com.udacity.shoestore.databinding.FragmentLoginBindingImpl
+androidx/databinding/DataBinderMapperImpl.java
+ androidx.databinding.DataBinderMapperImpl
+com/udacity/shoestore/DataBinderMapperImpl.java
+ com.udacity.shoestore.DataBinderMapperImpl
+ com.udacity.shoestore.DataBinderMapperImpl$InnerBrLookup
+ com.udacity.shoestore.DataBinderMapperImpl$InnerLayoutIdLookup
+com/udacity/shoestore/BR.java
+ com.udacity.shoestore.BR
+androidx/databinding/library/baseAdapters/BR.java
+ androidx.databinding.library.baseAdapters.BR
+com/udacity/shoestore/DataBindingTriggerClass.java
+ com.udacity.shoestore.DataBindingTriggerClass
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
+com/udacity/shoestore/BuildConfig.java
+ com.udacity.shoestore.BuildConfig

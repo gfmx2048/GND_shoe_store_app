@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ShoeStore</string>
+    <string name="email_label">email</string>
+    <string name="enter_you_email_hint">Enter you email…</string>
+    <string name="pwd_label">password</string>
+    <string name="enter_you_pwd_hint">Enter you password…</string>
+    <string name="new_login">New login</string>
+    <string name="login_with_existing_account">Login with existing account</string>
 </resources>
