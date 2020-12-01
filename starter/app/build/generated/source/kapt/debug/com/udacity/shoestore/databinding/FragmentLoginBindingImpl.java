@@ -14,12 +14,16 @@ public class FragmentLoginBindingImpl extends FragmentLoginBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.tv_email, 1);
-        sViewsWithIds.put(R.id.et_email, 2);
-        sViewsWithIds.put(R.id.tv_pwd, 3);
-        sViewsWithIds.put(R.id.et_pwd, 4);
-        sViewsWithIds.put(R.id.bt_new_login, 5);
-        sViewsWithIds.put(R.id.bt_login_with_existing, 6);
+        sViewsWithIds.put(R.id.iv_logo, 1);
+        sViewsWithIds.put(R.id.tv_email, 2);
+        sViewsWithIds.put(R.id.et_email, 3);
+        sViewsWithIds.put(R.id.tv_pwd, 4);
+        sViewsWithIds.put(R.id.et_pwd, 5);
+        sViewsWithIds.put(R.id.bt_new_login, 6);
+        sViewsWithIds.put(R.id.tv_or, 7);
+        sViewsWithIds.put(R.id.bt_login_with_existing, 8);
+        sViewsWithIds.put(R.id.guideline, 9);
+        sViewsWithIds.put(R.id.guideline2, 10);
     }
     // views
     @NonNull
@@ -30,16 +34,20 @@ public class FragmentLoginBindingImpl extends FragmentLoginBinding  {
     // Inverse Binding Event Handlers
 
     public FragmentLoginBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 11, sIncludes, sViewsWithIds));
     }
     private FragmentLoginBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (android.widget.Button) bindings[8]
             , (android.widget.Button) bindings[6]
-            , (android.widget.Button) bindings[5]
-            , (android.widget.EditText) bindings[2]
-            , (android.widget.EditText) bindings[4]
-            , (android.widget.TextView) bindings[1]
-            , (android.widget.TextView) bindings[3]
+            , (android.widget.EditText) bindings[3]
+            , (android.widget.EditText) bindings[5]
+            , (androidx.constraintlayout.widget.Guideline) bindings[9]
+            , (androidx.constraintlayout.widget.Guideline) bindings[10]
+            , (android.widget.ImageView) bindings[1]
+            , (android.widget.TextView) bindings[2]
+            , (android.widget.TextView) bindings[7]
+            , (android.widget.TextView) bindings[4]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);

@@ -8,13 +8,18 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
+                  <entry key="action_logout">
+                    <value>
+                      <LayoutPositions />
+                    </value>
+                  </entry>
                   <entry key="instructionFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="112" />
-                            <option name="y" value="43" />
+                            <option name="x" value="65" />
+                            <option name="y" value="41" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -50,13 +55,25 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="newShoeFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="486" />
+                            <option name="y" value="32" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="shoeListFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="427" />
-                            <option name="y" value="44" />
+                            <option name="x" value="296" />
+                            <option name="y" value="35" />
                           </Point>
                         </option>
                       </LayoutPositions>

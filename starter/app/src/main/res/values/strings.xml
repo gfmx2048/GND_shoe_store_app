@@ -6,4 +6,10 @@
     <string name="enter_you_pwd_hint">Enter you password…</string>
     <string name="new_login">New login</string>
     <string name="login_with_existing_account">Login with existing account</string>
+    <string name="shoe_shop_logo">Shoe shop logo</string>
+    <string name="or">Or</string>
+    <string name="welcome_title">Welcome to the shoe store app!!!</string>
+    <string name="welcome_description">This is the shoe store app thathat tlalshtsatdh tsjdthask jth atsjdths tj astl kdhtsatjsdat satljhdtshlthjsdat athsdtksadhtkskatds astkjdhksadtskthasd tkahsdkhthjstksahktd astksahdktksathksatksdt</string>
+    <string name="go_to_instructions">Go to instructions</string>
+    <string name="logout">Logout</string>
 </resources>

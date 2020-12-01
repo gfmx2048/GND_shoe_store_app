@@ -1,14 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     tools:context=".screens.WelcomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Welcome" />
+        android:background="@color/colorBlue"
+        android:orientation="vertical"
+        android:padding="20dp">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/shoe_shop_logo"
+            android:src="@drawable/ic_shoes" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/tv_label"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:text="@string/welcome_title" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            style="@style/tv_label"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="12sp"
+            android:text="@string/welcome_description" />
+
+        <Button
+            android:id="@+id/bt_instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorBlack"
+            android:padding="6dp"
+            android:text="@string/go_to_instructions"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+
+    </LinearLayout>
+</layout>

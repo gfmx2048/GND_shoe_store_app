@@ -2,5 +2,25 @@
     {
         "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_login.xml",
         "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\layout\\fragment_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_shoe_list.xml",
+        "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\layout\\fragment_shoe_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_new_shoe.xml",
+        "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\layout\\fragment_new_shoe.xml"
+    },
+    {
+        "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_welcome.xml",
+        "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\layout\\fragment_welcome.xml"
+    },
+    {
+        "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_instruction.xml",
+        "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\layout\\fragment_instruction.xml"
     }
 ]

@@ -6,9 +6,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.Guideline;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.udacity.shoestore.R;
@@ -29,20 +31,37 @@ public abstract class FragmentLoginBinding extends ViewDataBinding {
   public final EditText etPwd;
 
   @NonNull
+  public final Guideline guideline;
+
+  @NonNull
+  public final Guideline guideline2;
+
+  @NonNull
+  public final ImageView ivLogo;
+
+  @NonNull
   public final TextView tvEmail;
+
+  @NonNull
+  public final TextView tvOr;
 
   @NonNull
   public final TextView tvPwd;
 
   protected FragmentLoginBinding(Object _bindingComponent, View _root, int _localFieldCount,
       Button btLoginWithExisting, Button btNewLogin, EditText etEmail, EditText etPwd,
-      TextView tvEmail, TextView tvPwd) {
+      Guideline guideline, Guideline guideline2, ImageView ivLogo, TextView tvEmail, TextView tvOr,
+      TextView tvPwd) {
     super(_bindingComponent, _root, _localFieldCount);
     this.btLoginWithExisting = btLoginWithExisting;
     this.btNewLogin = btNewLogin;
     this.etEmail = etEmail;
     this.etPwd = etPwd;
+    this.guideline = guideline;
+    this.guideline2 = guideline2;
+    this.ivLogo = ivLogo;
     this.tvEmail = tvEmail;
+    this.tvOr = tvOr;
     this.tvPwd = tvPwd;
   }
 
