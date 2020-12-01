@@ -39,7 +39,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_gravity="end|bottom"
-            android:src="@android:drawable/ic_input_add"
+            android:src="@drawable/ic_add"
             android:layout_margin="16dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

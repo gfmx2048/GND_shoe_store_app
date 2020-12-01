@@ -1724,7 +1724,6 @@ id action_divider
 id action_image
 id action_instructionFragment_to_shoeListFragment
 id action_loginFragment_to_welcomeFragment
-id action_logout
 id action_menu_divider
 id action_menu_presenter
 id action_mode_bar
@@ -1891,7 +1890,6 @@ id listMode
 id list_item
 id ll_container
 id loginFragment
-id logout
 id main_navigation
 id masked
 id media_actions

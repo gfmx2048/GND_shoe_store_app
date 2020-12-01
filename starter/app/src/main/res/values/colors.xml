@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#1e1e1e</color>
-    <color name="colorAccent">#c3c3c3</color>
+    <color name="colorAccent">#f7931e</color>
 
     <color name="colorRed">#FF0000</color>
     <color name="colorInstashopRed">#ee2e5e</color>

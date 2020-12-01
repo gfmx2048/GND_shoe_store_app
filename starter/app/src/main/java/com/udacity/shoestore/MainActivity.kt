@@ -20,28 +20,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
         val toolbar = binding.toolbar
+        setSupportActionBar(toolbar)
         mNavController = this.findNavController(R.id.nav_host_fragment)
         val appBarConfiguration = AppBarConfiguration(mNavController.graph)
-        mNavController.addOnDestinationChangedListener { controller, destination, arguments ->
-            if(destination == controller.graph.findNode(R.id.shoeListFragment)){
-                    Timber.d("1")
-            }else{
-                Timber.d("0")
-            }
-        }
+//        mNavController.addOnDestinationChangedListener { controller, destination, _ ->
+//            if(destination == controller.graph.findNode(R.id.shoeListFragment)){
+//                    Timber.d("1")
+//            }else{
+//                Timber.d("0")
+//            }
+//        }
 
-        NavigationUI.setupWithNavController(toolbar,mNavController,appBarConfiguration)
-    }
+        toolbar.setupWithNavController(mNavController,appBarConfiguration)
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.main_menu, menu)
-        return super.onCreateOptionsMenu(menu)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.logout -> mNavController.navigate(R.id.action_logout)
-        }
-        return super.onOptionsItemSelected(item)
     }
 }
