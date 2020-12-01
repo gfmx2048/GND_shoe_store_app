@@ -23,13 +23,13 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         mNavController = this.findNavController(R.id.nav_host_fragment)
         val appBarConfiguration = AppBarConfiguration(mNavController.graph)
-//        mNavController.addOnDestinationChangedListener { controller, destination, _ ->
-//            if(destination == controller.graph.findNode(R.id.shoeListFragment)){
-//                    Timber.d("1")
-//            }else{
-//                Timber.d("0")
-//            }
-//        }
+        mNavController.addOnDestinationChangedListener { controller, destination, _ ->
+            if(destination == controller.graph.findNode(R.id.shoeListFragment)){
+                    Timber.d("1")
+            }else{
+                Timber.d("0")
+            }
+        }
 
         toolbar.setupWithNavController(mNavController,appBarConfiguration)
 
