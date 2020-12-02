@@ -4,6 +4,7 @@ package com.udacity.shoestore.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
@@ -17,10 +18,14 @@ public abstract class FragmentShoeListBinding extends ViewDataBinding {
   @NonNull
   public final FloatingActionButton fab;
 
+  @NonNull
+  public final LinearLayout llShoesContainer;
+
   protected FragmentShoeListBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      FloatingActionButton fab) {
+      FloatingActionButton fab, LinearLayout llShoesContainer) {
     super(_bindingComponent, _root, _localFieldCount);
     this.fab = fab;
+    this.llShoesContainer = llShoesContainer;
   }
 
   @NonNull

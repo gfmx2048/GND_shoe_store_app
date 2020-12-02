@@ -1729,7 +1729,8 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
-id action_shoeListFragment_to_newShoeFragment
+id action_shoeDetailsFragment_to_shoeListFragment
+id action_shoeListFragment_to_shoeDetailsFragment
 id action_text
 id action_welcomeFragment_to_instructionFragment
 id actions
@@ -1760,6 +1761,8 @@ id bounce
 id bt_instructions
 id bt_login_with_existing
 id bt_new_login
+id bt_sd_cancel
+id bt_sd_create
 id bt_show_list
 id buttonPanel
 id cache_measures
@@ -1834,6 +1837,10 @@ id enterAlways
 id enterAlwaysCollapsed
 id et_email
 id et_pwd
+id et_sd_company
+id et_sd_description
+id et_sd_name
+id et_sd_size
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1889,6 +1896,7 @@ id linear
 id listMode
 id list_item
 id ll_container
+id ll_shoes_container
 id loginFragment
 id main_navigation
 id masked
@@ -1929,7 +1937,6 @@ id nav_controller_view_tag
 id nav_host_fragment
 id navigation_header_container
 id never
-id newShoeFragment
 id noScroll
 id noState
 id none
@@ -1989,6 +1996,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id shoeDetailsFragment
 id shoeListFragment
 id shortcut
 id showCustom
@@ -2073,6 +2081,10 @@ id tv_email
 id tv_name
 id tv_or
 id tv_pwd
+id tv_sd_company
+id tv_sd_description
+id tv_sd_name
+id tv_sd_size
 id tv_size
 id tv_title
 id unchecked
@@ -2169,7 +2181,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_instruction
 layout fragment_login
-layout fragment_new_shoe
+layout fragment_shoe_details
 layout fragment_shoe_list
 layout fragment_welcome
 layout list_item_shoe
@@ -2269,11 +2281,17 @@ string abc_toolbar_collapse_description
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
+string cancel
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string company
+string company_hint
+string create
+string description
+string description_hint
 string email_label
 string enter_you_email_hint
 string enter_you_pwd_hint
@@ -2335,7 +2353,11 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string pwd_label
 string search_menu_title
+string shoe_name
+string shoe_name_hint
 string shoe_shop_logo
+string shoe_size
+string shoe_size_hint
 string status_bar_notification_info_overflow
 string welcome_description
 string welcome_title

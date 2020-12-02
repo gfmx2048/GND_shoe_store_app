@@ -9,7 +9,7 @@ import androidx.databinding.ViewDataBinding;
 import com.udacity.shoestore.databinding.ActivityMainBindingImpl;
 import com.udacity.shoestore.databinding.FragmentInstructionBindingImpl;
 import com.udacity.shoestore.databinding.FragmentLoginBindingImpl;
-import com.udacity.shoestore.databinding.FragmentNewShoeBindingImpl;
+import com.udacity.shoestore.databinding.FragmentShoeDetailsBindingImpl;
 import com.udacity.shoestore.databinding.FragmentShoeListBindingImpl;
 import com.udacity.shoestore.databinding.FragmentWelcomeBindingImpl;
 import java.lang.IllegalArgumentException;
@@ -29,7 +29,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_FRAGMENTLOGIN = 3;
 
-  private static final int LAYOUT_FRAGMENTNEWSHOE = 4;
+  private static final int LAYOUT_FRAGMENTSHOEDETAILS = 4;
 
   private static final int LAYOUT_FRAGMENTSHOELIST = 5;
 
@@ -41,7 +41,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.udacity.shoestore.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.udacity.shoestore.R.layout.fragment_instruction, LAYOUT_FRAGMENTINSTRUCTION);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.udacity.shoestore.R.layout.fragment_login, LAYOUT_FRAGMENTLOGIN);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.udacity.shoestore.R.layout.fragment_new_shoe, LAYOUT_FRAGMENTNEWSHOE);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.udacity.shoestore.R.layout.fragment_shoe_details, LAYOUT_FRAGMENTSHOEDETAILS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.udacity.shoestore.R.layout.fragment_shoe_list, LAYOUT_FRAGMENTSHOELIST);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.udacity.shoestore.R.layout.fragment_welcome, LAYOUT_FRAGMENTWELCOME);
   }
@@ -73,11 +73,11 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for fragment_login is invalid. Received: " + tag);
         }
-        case  LAYOUT_FRAGMENTNEWSHOE: {
-          if ("layout/fragment_new_shoe_0".equals(tag)) {
-            return new FragmentNewShoeBindingImpl(component, view);
+        case  LAYOUT_FRAGMENTSHOEDETAILS: {
+          if ("layout/fragment_shoe_details_0".equals(tag)) {
+            return new FragmentShoeDetailsBindingImpl(component, view);
           }
-          throw new IllegalArgumentException("The tag for fragment_new_shoe is invalid. Received: " + tag);
+          throw new IllegalArgumentException("The tag for fragment_shoe_details is invalid. Received: " + tag);
         }
         case  LAYOUT_FRAGMENTSHOELIST: {
           if ("layout/fragment_shoe_list_0".equals(tag)) {
@@ -150,7 +150,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout/activity_main_0", com.udacity.shoestore.R.layout.activity_main);
       sKeys.put("layout/fragment_instruction_0", com.udacity.shoestore.R.layout.fragment_instruction);
       sKeys.put("layout/fragment_login_0", com.udacity.shoestore.R.layout.fragment_login);
-      sKeys.put("layout/fragment_new_shoe_0", com.udacity.shoestore.R.layout.fragment_new_shoe);
+      sKeys.put("layout/fragment_shoe_details_0", com.udacity.shoestore.R.layout.fragment_shoe_details);
       sKeys.put("layout/fragment_shoe_list_0", com.udacity.shoestore.R.layout.fragment_shoe_list);
       sKeys.put("layout/fragment_welcome_0", com.udacity.shoestore.R.layout.fragment_welcome);
     }

@@ -12,4 +12,14 @@
     <string name="welcome_description">This is the shoe store app thathat tlalshtsatdh tsjdthask jth atsjdths tj astl kdhtsatjsdat satljhdtshlthjsdat athsdtksadhtkskatds astkjdhksadtskthasd tkahsdkhthjstksahktd astksahdktksathksatksdt</string>
     <string name="go_to_instructions">Go to instructions</string>
     <string name="logout">Logout</string>
+    <string name="shoe_name">Shoe name:</string>
+    <string name="shoe_name_hint">Shoe name...</string>
+    <string name="company">Company:</string>
+    <string name="company_hint">Company...</string>
+    <string name="description">Description:</string>
+    <string name="description_hint">Description...</string>
+    <string name="shoe_size">Shoe size:</string>
+    <string name="shoe_size_hint">Shoe size...</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
 </resources>

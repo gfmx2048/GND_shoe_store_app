@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".screens.ShoeDetailsFragment">
+
+        <TextView
+            android:id="@+id/tv_sd_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shoe_name" />
+
+        <EditText
+            android:id="@+id/et_sd_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/shoe_name_hint" />
+
+        <TextView
+            android:id="@+id/tv_sd_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/company" />
+
+        <EditText
+            android:id="@+id/et_sd_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/company_hint" />
+
+        <TextView
+            android:id="@+id/tv_sd_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description" />
+
+        <EditText
+            android:id="@+id/et_sd_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:hint="@string/description_hint" />
+
+        <TextView
+            android:id="@+id/tv_sd_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shoe_size" />
+
+        <EditText
+            android:id="@+id/et_sd_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:hint="@string/shoe_size_hint"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/bt_sd_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create" />
+
+        <Button
+            android:id="@+id/bt_sd_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel" />
+    </LinearLayout>
+</layout>

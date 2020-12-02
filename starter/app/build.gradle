@@ -54,4 +54,7 @@ dependencies {
     // Navigation
     implementation "android.arch.navigation:navigation-fragment-ktx:1.0.0"
     implementation "android.arch.navigation:navigation-ui-ktx:1.0.0"
+
+    //Used for the "by activityViewModels"
+    implementation "androidx.fragment:fragment-ktx:1.2.5"
 }

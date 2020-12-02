@@ -8,11 +8,6 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="action_logout">
-                    <value>
-                      <LayoutPositions />
-                    </value>
-                  </entry>
                   <entry key="instructionFragment">
                     <value>
                       <LayoutPositions>
@@ -55,13 +50,13 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="newShoeFragment">
+                  <entry key="shoeDetailsFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="486" />
-                            <option name="y" value="32" />
+                            <option name="x" value="515" />
+                            <option name="y" value="39" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -72,9 +67,18 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="296" />
-                            <option name="y" value="35" />
+                            <option name="x" value="293" />
+                            <option name="y" value="39" />
                           </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_shoeListFragment_to_shoeDetailsFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>

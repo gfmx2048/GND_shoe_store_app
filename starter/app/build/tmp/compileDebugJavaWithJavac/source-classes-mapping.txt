@@ -4,16 +4,16 @@ com/udacity/shoestore/databinding/FragmentWelcomeBinding.java
  com.udacity.shoestore.databinding.FragmentWelcomeBinding
 com/udacity/shoestore/databinding/FragmentInstructionBinding.java
  com.udacity.shoestore.databinding.FragmentInstructionBinding
-com/udacity/shoestore/databinding/FragmentNewShoeBinding.java
- com.udacity.shoestore.databinding.FragmentNewShoeBinding
+com/udacity/shoestore/databinding/FragmentShoeDetailsBindingImpl.java
+ com.udacity.shoestore.databinding.FragmentShoeDetailsBindingImpl
 androidx/databinding/DataBinderMapperImpl.java
  androidx.databinding.DataBinderMapperImpl
-com/udacity/shoestore/databinding/FragmentNewShoeBindingImpl.java
- com.udacity.shoestore.databinding.FragmentNewShoeBindingImpl
 com/udacity/shoestore/BR.java
  com.udacity.shoestore.BR
 androidx/databinding/library/baseAdapters/BR.java
  androidx.databinding.library.baseAdapters.BR
+com/udacity/shoestore/databinding/FragmentShoeDetailsBinding.java
+ com.udacity.shoestore.databinding.FragmentShoeDetailsBinding
 com/udacity/shoestore/databinding/ActivityMainBindingImpl.java
  com.udacity.shoestore.databinding.ActivityMainBindingImpl
 com/udacity/shoestore/databinding/FragmentInstructionBindingImpl.java

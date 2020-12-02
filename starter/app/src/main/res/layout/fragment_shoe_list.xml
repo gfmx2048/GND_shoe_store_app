@@ -18,17 +18,11 @@
             android:layout_height="match_parent">
 
             <LinearLayout
+                android:id="@+id/ll_shoes_container"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <include layout="@layout/list_item_shoe" />
-
-                <include layout="@layout/list_item_shoe" />
-
-                <include layout="@layout/list_item_shoe" />
-
-                <include layout="@layout/list_item_shoe" />
             </LinearLayout>
         </ScrollView>
 

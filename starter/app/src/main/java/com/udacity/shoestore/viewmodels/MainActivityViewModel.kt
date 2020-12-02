@@ -30,4 +30,10 @@ class MainActivityViewModel : ViewModel() {
             .map { allowedChars.random() }
             .joinToString("")
     }
+
+    fun saveShoe(name: String, company: String, description: String, size: Double) {
+        val currentShoes: MutableList<Shoe> = _shoes.value?.toMutableList()?: mutableListOf()
+        currentShoes.add(Shoe(name,size,company,description, mutableListOf()))
+        _shoes.postValue(currentShoes)
+    }
 }

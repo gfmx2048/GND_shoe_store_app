@@ -14,13 +14,12 @@ public class FragmentShoeListBindingImpl extends FragmentShoeListBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.ll_shoes_container, 1);
         sViewsWithIds.put(R.id.fab, 2);
     }
     // views
     @NonNull
     private final androidx.constraintlayout.widget.ConstraintLayout mboundView0;
-    @NonNull
-    private final android.widget.LinearLayout mboundView1;
     // variables
     // values
     // listeners
@@ -32,11 +31,10 @@ public class FragmentShoeListBindingImpl extends FragmentShoeListBinding  {
     private FragmentShoeListBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (com.google.android.material.floatingactionbutton.FloatingActionButton) bindings[2]
+            , (android.widget.LinearLayout) bindings[1]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);
-        this.mboundView1 = (android.widget.LinearLayout) bindings[1];
-        this.mboundView1.setTag(null);
         setRootTag(root);
         // listeners
         invalidateAll();
