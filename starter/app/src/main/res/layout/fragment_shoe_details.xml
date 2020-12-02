@@ -2,6 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="viewModel"
+            type="com.udacity.shoestore.viewmodels.MainActivityViewModel" />
+    </data>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,6 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
+            android:text="@={viewModel.newShoe.name}"
             android:hint="@string/shoe_name_hint" />
 
         <TextView
@@ -32,6 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
+            android:text="@={viewModel.newShoe.company}"
             android:hint="@string/company_hint" />
 
         <TextView
@@ -45,6 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textCapSentences"
+            android:text="@={viewModel.newShoe.description}"
             android:hint="@string/description_hint" />
 
         <TextView
@@ -59,18 +68,21 @@
             android:layout_height="wrap_content"
             android:maxLines="1"
             android:hint="@string/shoe_size_hint"
+            android:text="@={`` + viewModel.newShoe.size}"
             android:inputType="numberDecimal" />
 
         <Button
             android:id="@+id/bt_sd_create"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="@{()->viewModel.saveShoe()}"
             android:text="@string/create" />
 
         <Button
             android:id="@+id/bt_sd_cancel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="@{()->viewModel.close()}"
             android:text="@string/cancel" />
     </LinearLayout>
 </layout>

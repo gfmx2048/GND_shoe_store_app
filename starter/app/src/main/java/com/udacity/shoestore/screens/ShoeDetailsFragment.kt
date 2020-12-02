@@ -8,10 +8,13 @@ import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeDetailsBinding
+import com.udacity.shoestore.hideKeyboard
 import com.udacity.shoestore.viewmodels.MainActivityViewModel
+import timber.log.Timber
 
 class ShoeDetailsFragment : Fragment() {
 
@@ -21,36 +24,40 @@ class ShoeDetailsFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         // Inflate the layout for this fragment
         mBinding = DataBindingUtil.inflate(inflater,R.layout.fragment_shoe_details, container, false)
-        mBinding.btSdCreate.setOnClickListener {
-            validateTextsAndSave()
-        }
-        mBinding.btSdCancel.setOnClickListener{findNavController().navigate(ShoeDetailsFragmentDirections.actionShoeDetailsFragmentToShoeListFragment())}
+        mBinding.viewModel = mViewModel
+
+        // Specify the current activity as the lifecycle owner of the binding. This is used so that
+        // the binding can observe LiveData updates
+        mBinding.lifecycleOwner = this
+        Timber.d("---------------- OnCreateView Details -------------")
+        subscribeToLiveData()
         return mBinding.root
     }
 
-    private fun validateTextsAndSave() {
-        if(mBinding.etSdName.text.toString().isEmpty()){
-            Toast.makeText(requireContext(),"Please add a shoe name",Toast.LENGTH_SHORT).show()
-            return
-        }
+    private fun subscribeToLiveData() {
+        mViewModel.closeFrag.observe(viewLifecycleOwner, {
+            it?.let {
+                if(it){
+                    findNavController().navigate(ShoeDetailsFragmentDirections.actionShoeDetailsFragmentToShoeListFragment())
+                    mViewModel.clearClose()
+                }
+            }
+        })
 
-        if(mBinding.etSdCompany.text.toString().isEmpty()){
-            Toast.makeText(requireContext(),"Please add a company",Toast.LENGTH_SHORT).show()
-            return
-        }
+        mViewModel.error.observe(viewLifecycleOwner, {
+            it?.let {
+                Toast.makeText(requireContext(),it,Toast.LENGTH_SHORT).show()
+                mViewModel.clearError()
+            }
+        })
 
-        if(mBinding.etSdDescription.text.toString().isEmpty()){
-            Toast.makeText(requireContext(),"Please add a description",Toast.LENGTH_SHORT).show()
-            return
-        }
-
-        //I will use a check for europeans size here :)
-        if(mBinding.etSdSize.text.toString().toDouble() < 20.0){
-            Toast.makeText(requireContext(),"Please add a valid shoe size",Toast.LENGTH_SHORT).show()
-            return
-        }
-
-        mViewModel.saveShoe(mBinding.etSdName.text.toString(),mBinding.etSdCompany.text.toString(),mBinding.etSdDescription.text.toString(),mBinding.etSdSize.text.toString().toDouble())
-        findNavController().popBackStack()
+        mViewModel.hideKeyboard.observe(viewLifecycleOwner, {
+            it?.let {
+                if(it) {
+                    hideKeyboard()
+                    mViewModel.clearHideKeyboard()
+                }
+            }
+        })
     }
 }

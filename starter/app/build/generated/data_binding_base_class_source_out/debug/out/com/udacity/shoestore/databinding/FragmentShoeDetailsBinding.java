@@ -9,9 +9,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.udacity.shoestore.R;
+import com.udacity.shoestore.viewmodels.MainActivityViewModel;
 import java.lang.Deprecated;
 import java.lang.Object;
 
@@ -46,6 +48,9 @@ public abstract class FragmentShoeDetailsBinding extends ViewDataBinding {
   @NonNull
   public final TextView tvSdSize;
 
+  @Bindable
+  protected MainActivityViewModel mViewModel;
+
   protected FragmentShoeDetailsBinding(Object _bindingComponent, View _root, int _localFieldCount,
       Button btSdCancel, Button btSdCreate, EditText etSdCompany, EditText etSdDescription,
       EditText etSdName, EditText etSdSize, TextView tvSdCompany, TextView tvSdDescription,
@@ -61,6 +66,13 @@ public abstract class FragmentShoeDetailsBinding extends ViewDataBinding {
     this.tvSdDescription = tvSdDescription;
     this.tvSdName = tvSdName;
     this.tvSdSize = tvSdSize;
+  }
+
+  public abstract void setViewModel(@Nullable MainActivityViewModel viewModel);
+
+  @Nullable
+  public MainActivityViewModel getViewModel() {
+    return mViewModel;
   }
 
   @NonNull
