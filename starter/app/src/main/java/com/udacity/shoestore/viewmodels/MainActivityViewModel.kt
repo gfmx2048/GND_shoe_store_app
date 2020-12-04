@@ -48,7 +48,7 @@ class MainActivityViewModel : ViewModel() {
     private fun createRandomShoes(numberOfShoes:Int): MutableList<Shoe>{
         val shoeList = mutableListOf<Shoe>()
         for (i in 0..numberOfShoes){
-            shoeList.add(Shoe(getRandomString(Random.nextInt(5,7)), Random.nextInt(39,45).toDouble(),"Company$i","description$i", listOf("daniel_storek_adidas.jpg","","")))
+            shoeList.add(Shoe(getRandomString(Random.nextInt(5,7)), Random.nextInt(39,45).toDouble(),"Company$i","description$i", listOf(R.drawable.nike_one,"nike_two.jpg","addidas_one.jpg")))
         }
         return shoeList
     }

@@ -4,11 +4,13 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
 import android.view.*
+import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
+import com.bumptech.glide.Glide
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
 import com.udacity.shoestore.models.Shoe
@@ -51,6 +53,7 @@ class ShoeListFragment : Fragment() {
             tv_company.text = shoe.company
             tv_description.text = shoe.description
             tv_size.text = shoe.size.toString()
+            Glide.with(requireActivity().applicationContext).load(ContextCompat.getDrawable(requireContext(),shoe.images[0]))
         }
         mBinding.llShoesContainer.addView(listItemShoe)
     }
