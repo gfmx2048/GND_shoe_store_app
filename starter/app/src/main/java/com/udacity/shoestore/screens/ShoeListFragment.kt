@@ -53,7 +53,7 @@ class ShoeListFragment : Fragment() {
             tv_company.text = shoe.company
             tv_description.text = shoe.description
             tv_size.text = shoe.size.toString()
-            Glide.with(requireActivity().applicationContext).load(ContextCompat.getDrawable(requireContext(),shoe.images[0]))
+            Glide.with(requireActivity().applicationContext).load(ContextCompat.getDrawable(requireContext(),shoe.images[0])).into(iv_image)
         }
         mBinding.llShoesContainer.addView(listItemShoe)
     }

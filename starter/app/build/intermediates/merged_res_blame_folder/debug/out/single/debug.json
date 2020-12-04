@@ -4,6 +4,10 @@
         "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_adidas_one.jpg.flat",
+        "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\drawable\\adidas_one.jpg"
+    },
+    {
         "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_login.xml.flat",
         "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\layout\\fragment_login.xml"
     },
@@ -22,6 +26,10 @@
     {
         "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nike_one.jpg.flat",
+        "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\drawable\\nike_one.jpg"
     },
     {
         "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_from_left.xml.flat",
@@ -76,6 +84,10 @@
         "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nike_two.jpg.flat",
+        "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\drawable\\nike_two.jpg"
+    },
+    {
         "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\res\\merged\\debug\\navigation_main_navigation.xml.flat",
         "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\navigation\\main_navigation.xml"
     },
@@ -96,12 +108,12 @@
         "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_shoe_list.xml.flat",
-        "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\layout\\fragment_shoe_list.xml"
-    },
-    {
         "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_from_left.xml.flat",
         "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\anim\\slide_in_from_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_shoe_list.xml.flat",
+        "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\layout\\fragment_shoe_list.xml"
     },
     {
         "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_from_right.xml.flat",
@@ -112,19 +124,19 @@
         "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_item_shoe.xml.flat",
-        "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\layout\\list_item_shoe.xml"
-    },
-    {
         "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_fragment_login.xml.flat",
         "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\layout-land\\fragment_login.xml"
     },
     {
-        "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_item_shoe.xml.flat",
+        "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\layout\\list_item_shoe.xml"
     },
     {
         "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_fragment_welcome.xml.flat",
         "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\layout-land\\fragment_welcome.xml"
+    },
+    {
+        "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     }
 ]

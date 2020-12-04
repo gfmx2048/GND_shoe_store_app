@@ -41,12 +41,5 @@ class ShoeDetailsFragment : Fragment() {
                 }
             }
         })
-
-        mViewModel.error.observe(viewLifecycleOwner, {
-            it?.let {
-                Toast.makeText(requireContext(),it,Toast.LENGTH_SHORT).show()
-                mViewModel.clearError()
-            }
-        })
     }
 }

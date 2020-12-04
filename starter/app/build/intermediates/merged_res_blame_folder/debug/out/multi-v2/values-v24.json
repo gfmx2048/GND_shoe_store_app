@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\gfmx2\\.gradle\\caches\\transforms-2\\files-2.1\\4ab942444bb70854a1fb9d748e9f46bd\\media-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\gfmx2\\.gradle\\caches\\transforms-2\\files-2.1\\ceabdbb997af9d0b67a3e5249cb46713\\media-1.0.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\gfmx2\\.gradle\\caches\\transforms-2\\files-2.1\\583c184d000391de364711d2e6a50ffc\\appcompat-1.2.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\gfmx2\\.gradle\\caches\\transforms-2\\files-2.1\\97d7b09b9d26808cbd36d11c0556d2bc\\appcompat-1.2.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

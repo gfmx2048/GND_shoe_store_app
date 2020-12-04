@@ -14,7 +14,7 @@ class MainActivityViewModel : ViewModel() {
     var shoes = mutableListOf<Shoe>()
     val user = UserRepository.user
 
-    val newShoe = Shoe("",0.0,"","")
+    val newShoe = Shoe("",0.0,"","", listOf(R.drawable.ic_shoes))
 
     private val _newShoeLD = MutableLiveData<Shoe>()
     val newShoeLD: LiveData<Shoe>
@@ -48,7 +48,7 @@ class MainActivityViewModel : ViewModel() {
     private fun createRandomShoes(numberOfShoes:Int): MutableList<Shoe>{
         val shoeList = mutableListOf<Shoe>()
         for (i in 0..numberOfShoes){
-            shoeList.add(Shoe(getRandomString(Random.nextInt(5,7)), Random.nextInt(39,45).toDouble(),"Company$i","description$i", listOf(R.drawable.nike_one,"nike_two.jpg","addidas_one.jpg")))
+            shoeList.add(Shoe(getRandomString(Random.nextInt(5,7)), Random.nextInt(39,45).toDouble(),"Company$i","description$i", listOf(R.drawable.nike_one,R.drawable.nike_two,R.drawable.adidas_one)))
         }
         return shoeList
     }

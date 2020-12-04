@@ -4,9 +4,9 @@ import androidx.navigation.ActionOnlyNavDirections
 import androidx.navigation.NavDirections
 import com.udacity.shoestore.R
 
-class WelcomeFragmentDirections private constructor() {
-    companion object {
-        fun actionWelcomeFragmentToInstructionFragment(): NavDirections =
-                ActionOnlyNavDirections(R.id.action_welcomeFragment_to_instructionFragment)
-    }
+public class WelcomeFragmentDirections private constructor() {
+  public companion object {
+    public fun actionWelcomeFragmentToInstructionFragment(): NavDirections =
+        ActionOnlyNavDirections(R.id.action_welcomeFragment_to_instructionFragment)
+  }
 }
