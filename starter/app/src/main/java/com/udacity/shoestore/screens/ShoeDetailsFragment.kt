@@ -8,11 +8,9 @@ import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeDetailsBinding
-import com.udacity.shoestore.hideKeyboard
 import com.udacity.shoestore.viewmodels.MainActivityViewModel
 import timber.log.Timber
 
@@ -38,7 +36,7 @@ class ShoeDetailsFragment : Fragment() {
         mViewModel.closeFrag.observe(viewLifecycleOwner, {
             it?.let {
                 if(it){
-                    findNavController().navigate(ShoeDetailsFragmentDirections.actionShoeDetailsFragmentToShoeListFragment())
+                    findNavController().navigateUp()
                     mViewModel.clearClose()
                 }
             }
@@ -48,15 +46,6 @@ class ShoeDetailsFragment : Fragment() {
             it?.let {
                 Toast.makeText(requireContext(),it,Toast.LENGTH_SHORT).show()
                 mViewModel.clearError()
-            }
-        })
-
-        mViewModel.hideKeyboard.observe(viewLifecycleOwner, {
-            it?.let {
-                if(it) {
-                    hideKeyboard()
-                    mViewModel.clearHideKeyboard()
-                }
             }
         })
     }

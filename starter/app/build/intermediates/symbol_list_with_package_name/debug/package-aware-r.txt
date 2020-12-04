@@ -2351,6 +2351,12 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string please_add_a_company
+string please_add_a_description
+string please_add_a_valid_email
+string please_add_a_valid_pwd
+string please_add_a_valid_shoe_size
+string please_add_shoe_name
 string pwd_label
 string search_menu_title
 string shoe_name
@@ -2359,6 +2365,7 @@ string shoe_shop_logo
 string shoe_size
 string shoe_size_hint
 string status_bar_notification_info_overflow
+string user_does_not_exist
 string welcome_description
 string welcome_title
 style AlertDialog_AppCompat
@@ -3062,7 +3069,9 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
-style tv_label
+style bt_style
+style et_style
+style tv_label_style
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

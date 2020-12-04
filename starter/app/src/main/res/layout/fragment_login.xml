@@ -4,10 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".screens.LoginFragment">
 
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.udacity.shoestore.viewmodels.MainActivityViewModel" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorBlue">
+        android:background="@color/colorPrimary">
 
         <ImageView
             android:id="@+id/iv_logo"
@@ -19,11 +26,12 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintStart_toStartOf="@+id/guideline"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2"
             app:layout_constraintVertical_chainStyle="packed" />
 
         <TextView
             android:id="@+id/tv_email"
-            style="@style/tv_label"
+            style="@style/tv_label_style"
             android:text="@string/email_label"
             app:layout_constraintBottom_toTopOf="@+id/et_email"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -32,15 +40,12 @@
 
         <EditText
             android:id="@+id/et_email"
-            style="@style/tv_label"
-            android:background="@color/colorWhite"
+            style="@style/et_style"
             android:hint="@string/enter_you_email_hint"
             android:importantForAutofill="no"
             android:inputType="textEmailAddress"
-            android:minHeight="45dp"
             android:nextFocusDown="@+id/et_pwd"
-            android:padding="6dp"
-            android:textColorHint="@color/colorPrimaryGray"
+            android:text='@={viewModel.user.email}'
             app:layout_constraintBottom_toTopOf="@+id/tv_pwd"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintStart_toStartOf="@+id/guideline"
@@ -48,7 +53,9 @@
 
         <TextView
             android:id="@+id/tv_pwd"
-            style="@style/tv_label"
+            style="@style/tv_label_style"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
             android:text="@string/pwd_label"
             app:layout_constraintBottom_toTopOf="@+id/et_pwd"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -57,14 +64,11 @@
 
         <EditText
             android:id="@+id/et_pwd"
-            style="@style/tv_label"
-            android:background="@color/colorWhite"
+            style="@style/et_style"
             android:hint="@string/enter_you_pwd_hint"
             android:importantForAutofill="no"
             android:inputType="textPassword"
-            android:minHeight="45dp"
-            android:padding="6dp"
-            android:textColorHint="@color/colorPrimaryGray"
+            android:text='@={viewModel.user.password}'
             app:layout_constraintBottom_toTopOf="@+id/bt_new_login"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintStart_toStartOf="@+id/guideline"
@@ -72,13 +76,11 @@
 
         <Button
             android:id="@+id/bt_new_login"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            style="@style/bt_style"
             android:layout_marginTop="20dp"
-            android:background="@color/colorBlack"
+            android:layout_marginBottom="4dp"
+            android:onClick="@{()->viewModel.loginUser()}"
             android:text="@string/new_login"
-            android:textAllCaps="false"
-            android:textColor="@color/colorWhite"
             app:layout_constraintBottom_toTopOf="@+id/tv_or"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintStart_toStartOf="@+id/guideline"
@@ -86,7 +88,8 @@
 
         <TextView
             android:id="@+id/tv_or"
-            style="@style/tv_label"
+            style="@style/tv_label_style"
+            android:layout_margin="6dp"
             android:gravity="center_horizontal"
             android:text="@string/or"
             app:layout_constraintBottom_toTopOf="@+id/bt_login_with_existing"
@@ -96,12 +99,9 @@
 
         <Button
             android:id="@+id/bt_login_with_existing"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@color/colorBlack"
+            style="@style/bt_style"
+            android:onClick="@{()->viewModel.loginAlreadyExistingUser()}"
             android:text="@string/login_with_existing_account"
-            android:textAllCaps="false"
-            android:textColor="@color/colorWhite"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintStart_toStartOf="@+id/guideline"

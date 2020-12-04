@@ -11,9 +11,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.Guideline;
+import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.udacity.shoestore.R;
+import com.udacity.shoestore.viewmodels.MainActivityViewModel;
 import java.lang.Deprecated;
 import java.lang.Object;
 
@@ -48,6 +50,9 @@ public abstract class FragmentLoginBinding extends ViewDataBinding {
   @NonNull
   public final TextView tvPwd;
 
+  @Bindable
+  protected MainActivityViewModel mViewModel;
+
   protected FragmentLoginBinding(Object _bindingComponent, View _root, int _localFieldCount,
       Button btLoginWithExisting, Button btNewLogin, EditText etEmail, EditText etPwd,
       Guideline guideline, Guideline guideline2, ImageView ivLogo, TextView tvEmail, TextView tvOr,
@@ -63,6 +68,13 @@ public abstract class FragmentLoginBinding extends ViewDataBinding {
     this.tvEmail = tvEmail;
     this.tvOr = tvOr;
     this.tvPwd = tvPwd;
+  }
+
+  public abstract void setViewModel(@Nullable MainActivityViewModel viewModel);
+
+  @Nullable
+  public MainActivityViewModel getViewModel() {
+    return mViewModel;
   }
 
   @NonNull

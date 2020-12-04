@@ -2,6 +2,8 @@ package com.udacity.shoestore
 
 import android.app.Activity
 import android.content.Context
+import android.text.TextUtils
+import android.util.Patterns
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import androidx.fragment.app.Fragment
@@ -27,3 +29,8 @@ fun Context.hideKeyboard(view: View) {
     val inputMethodManager = getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
     inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
 }
+
+/**
+ * Extension function that checks the validity of an email address
+ */
+fun String?.isValidEmail() = if(this==null) false else !TextUtils.isEmpty(this) && Patterns.EMAIL_ADDRESS.matcher(this).matches()

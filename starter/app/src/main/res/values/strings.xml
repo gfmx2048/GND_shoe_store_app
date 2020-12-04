@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">ShoeStore</string>
-    <string name="email_label">email</string>
+    <string name="email_label">EMAIL ADDRESS</string>
     <string name="enter_you_email_hint">Enter you email…</string>
-    <string name="pwd_label">password</string>
+    <string name="pwd_label">PASSWORD</string>
     <string name="enter_you_pwd_hint">Enter you password…</string>
     <string name="new_login">New login</string>
     <string name="login_with_existing_account">Login with existing account</string>
@@ -12,14 +12,21 @@
     <string name="welcome_description">This is the shoe store app thathat tlalshtsatdh tsjdthask jth atsjdths tj astl kdhtsatjsdat satljhdtshlthjsdat athsdtksadhtkskatds astkjdhksadtskthasd tkahsdkhthjstksahktd astksahdktksathksatksdt</string>
     <string name="go_to_instructions">Go to instructions</string>
     <string name="logout">Logout</string>
-    <string name="shoe_name">Shoe name:</string>
-    <string name="shoe_name_hint">Shoe name...</string>
-    <string name="company">Company:</string>
-    <string name="company_hint">Company...</string>
-    <string name="description">Description:</string>
-    <string name="description_hint">Description...</string>
-    <string name="shoe_size">Shoe size:</string>
-    <string name="shoe_size_hint">Shoe size...</string>
+    <string name="shoe_name">SHOE NAME:</string>
+    <string name="shoe_name_hint">Shoe name…</string>
+    <string name="company">COMPANY:</string>
+    <string name="company_hint">Company…</string>
+    <string name="description">DESCRIPTION:</string>
+    <string name="description_hint">Description…</string>
+    <string name="shoe_size">SHOE SIZE:</string>
+    <string name="shoe_size_hint">Shoe size…</string>
     <string name="create">Create</string>
     <string name="cancel">Cancel</string>
+    <string name="please_add_shoe_name">Please add a shoe name</string>
+    <string name="please_add_a_company">Please add a company</string>
+    <string name="please_add_a_description">Please add a description</string>
+    <string name="please_add_a_valid_shoe_size">Please add a valid shoe size</string>
+    <string name="please_add_a_valid_email">Please add a valid email</string>
+    <string name="please_add_a_valid_pwd">Please add a valid password with more than 4 characters</string>
+    <string name="user_does_not_exist">There is not an existing user account. Please create to proceed</string>
 </resources>
