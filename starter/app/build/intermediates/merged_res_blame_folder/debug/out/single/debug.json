@@ -48,6 +48,10 @@
         "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_fragment_instruction.xml.flat",
+        "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\layout-land\\fragment_instruction.xml"
+    },
+    {
         "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_instruction.xml.flat",
         "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\layout\\fragment_instruction.xml"
     },
@@ -96,7 +100,15 @@
         "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\layout\\list_item_shoe.xml"
     },
     {
+        "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_fragment_login.xml.flat",
+        "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\layout-land\\fragment_login.xml"
+    },
+    {
         "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_fragment_welcome.xml.flat",
+        "source": "C:\\Users\\gfmx2\\Documents\\GoogleNanoDegree_all\\GND_shoe_store_app\\starter\\app\\src\\main\\res\\layout-land\\fragment_welcome.xml"
     }
 ]

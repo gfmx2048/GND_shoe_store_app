@@ -5,8 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.widget.NestedScrollView;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.udacity.shoestore.R;
@@ -15,12 +18,29 @@ import java.lang.Object;
 
 public abstract class FragmentInstructionBinding extends ViewDataBinding {
   @NonNull
-  public final Button btShowList;
+  public final Button btInstructions;
+
+  @NonNull
+  public final ImageView ivLogo;
+
+  @NonNull
+  public final NestedScrollView nsv;
+
+  @NonNull
+  public final TextView tvDescription;
+
+  @NonNull
+  public final TextView tvTitle;
 
   protected FragmentInstructionBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      Button btShowList) {
+      Button btInstructions, ImageView ivLogo, NestedScrollView nsv, TextView tvDescription,
+      TextView tvTitle) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.btShowList = btShowList;
+    this.btInstructions = btInstructions;
+    this.ivLogo = ivLogo;
+    this.nsv = nsv;
+    this.tvDescription = tvDescription;
+    this.tvTitle = tvTitle;
   }
 
   @NonNull

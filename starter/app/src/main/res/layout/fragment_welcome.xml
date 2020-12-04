@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".screens.WelcomeFragment">
 
-    <LinearLayout
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.udacity.shoestore.viewmodels.MainActivityViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorPrimary"
@@ -14,16 +22,24 @@
             android:id="@+id/iv_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:contentDescription="@string/shoe_shop_logo"
-            android:src="@drawable/ic_shoes" />
+            android:src="@drawable/ic_shoes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:layout_marginTop="12dp"
             android:id="@+id/tv_title"
             style="@style/tv_label_style"
             android:layout_width="match_parent"
             android:gravity="center_horizontal"
-            android:text="@string/welcome_title" />
+            android:text="@{@string/welcome_title(viewModel.user.email)}"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
 
         <TextView
             android:id="@+id/tv_description"
@@ -31,11 +47,16 @@
             android:layout_width="match_parent"
             android:layout_marginTop="20dp"
             android:lineSpacingExtra="12sp"
-            android:text="@string/welcome_description" />
+            android:text="@string/welcome_description"
+            app:layout_constraintVertical_bias="0.2"
+            app:layout_constraintBottom_toTopOf="@+id/bt_instructions"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
         <Button
-            style="@style/bt_style"
             android:id="@+id/bt_instructions"
+            style="@style/bt_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -43,8 +64,11 @@
             android:padding="6dp"
             android:text="@string/go_to_instructions"
             android:textAllCaps="false"
-            android:textColor="@color/colorWhite" />
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

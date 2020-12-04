@@ -1,49 +1,57 @@
-com/udacity/shoestore/databinding/FragmentShoeListBindingImpl.java
- com.udacity.shoestore.databinding.FragmentShoeListBindingImpl
+com/udacity/shoestore/databinding/FragmentLoginBinding.java
+ com.udacity.shoestore.databinding.FragmentLoginBinding
 com/udacity/shoestore/databinding/FragmentWelcomeBinding.java
  com.udacity.shoestore.databinding.FragmentWelcomeBinding
 com/udacity/shoestore/databinding/FragmentInstructionBinding.java
  com.udacity.shoestore.databinding.FragmentInstructionBinding
-com/udacity/shoestore/DataBindingTriggerClass.java
- com.udacity.shoestore.DataBindingTriggerClass
+com/udacity/shoestore/BuildConfig.java
+ com.udacity.shoestore.BuildConfig
 androidx/databinding/DataBinderMapperImpl.java
  androidx.databinding.DataBinderMapperImpl
 com/udacity/shoestore/BR.java
  com.udacity.shoestore.BR
 androidx/databinding/library/baseAdapters/BR.java
  androidx.databinding.library.baseAdapters.BR
-com/udacity/shoestore/BuildConfig.java
- com.udacity.shoestore.BuildConfig
+com/udacity/shoestore/databinding/FragmentWelcomeBindingLandImpl.java
+ com.udacity.shoestore.databinding.FragmentWelcomeBindingLandImpl
+com/udacity/shoestore/databinding/FragmentShoeDetailsBinding.java
+ com.udacity.shoestore.databinding.FragmentShoeDetailsBinding
 com/udacity/shoestore/databinding/ActivityMainBindingImpl.java
  com.udacity.shoestore.databinding.ActivityMainBindingImpl
 com/udacity/shoestore/databinding/FragmentInstructionBindingImpl.java
  com.udacity.shoestore.databinding.FragmentInstructionBindingImpl
 com/udacity/shoestore/databinding/FragmentWelcomeBindingImpl.java
  com.udacity.shoestore.databinding.FragmentWelcomeBindingImpl
+com/udacity/shoestore/databinding/FragmentInstructionBindingLandImpl.java
+ com.udacity.shoestore.databinding.FragmentInstructionBindingLandImpl
 com/udacity/shoestore/databinding/ActivityMainBinding.java
  com.udacity.shoestore.databinding.ActivityMainBinding
 com/udacity/shoestore/databinding/FragmentShoeListBinding.java
  com.udacity.shoestore.databinding.FragmentShoeListBinding
-androidx/databinding/DataBindingComponent.java
- androidx.databinding.DataBindingComponent
-com/udacity/shoestore/DataBinderMapperImpl.java
- com.udacity.shoestore.DataBinderMapperImpl
- com.udacity.shoestore.DataBinderMapperImpl$InnerBrLookup
- com.udacity.shoestore.DataBinderMapperImpl$InnerLayoutIdLookup
-com/udacity/shoestore/generated/callback/OnClickListener.java
- com.udacity.shoestore.generated.callback.OnClickListener
- com.udacity.shoestore.generated.callback.OnClickListener$Listener
-com/udacity/shoestore/databinding/FragmentShoeDetailsBinding.java
- com.udacity.shoestore.databinding.FragmentShoeDetailsBinding
-com/udacity/shoestore/databinding/FragmentLoginBinding.java
- com.udacity.shoestore.databinding.FragmentLoginBinding
 com/udacity/shoestore/databinding/FragmentLoginBindingImpl.java
  com.udacity.shoestore.databinding.FragmentLoginBindingImpl
  com.udacity.shoestore.databinding.FragmentLoginBindingImpl$1
  com.udacity.shoestore.databinding.FragmentLoginBindingImpl$2
+com/udacity/shoestore/databinding/FragmentShoeListBindingImpl.java
+ com.udacity.shoestore.databinding.FragmentShoeListBindingImpl
+com/udacity/shoestore/generated/callback/OnClickListener.java
+ com.udacity.shoestore.generated.callback.OnClickListener
+ com.udacity.shoestore.generated.callback.OnClickListener$Listener
+com/udacity/shoestore/databinding/FragmentLoginBindingLandImpl.java
+ com.udacity.shoestore.databinding.FragmentLoginBindingLandImpl
+ com.udacity.shoestore.databinding.FragmentLoginBindingLandImpl$1
+ com.udacity.shoestore.databinding.FragmentLoginBindingLandImpl$2
+com/udacity/shoestore/DataBindingTriggerClass.java
+ com.udacity.shoestore.DataBindingTriggerClass
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
 com/udacity/shoestore/databinding/FragmentShoeDetailsBindingImpl.java
  com.udacity.shoestore.databinding.FragmentShoeDetailsBindingImpl
  com.udacity.shoestore.databinding.FragmentShoeDetailsBindingImpl$1
  com.udacity.shoestore.databinding.FragmentShoeDetailsBindingImpl$2
  com.udacity.shoestore.databinding.FragmentShoeDetailsBindingImpl$3
  com.udacity.shoestore.databinding.FragmentShoeDetailsBindingImpl$4
+com/udacity/shoestore/DataBinderMapperImpl.java
+ com.udacity.shoestore.DataBinderMapperImpl
+ com.udacity.shoestore.DataBinderMapperImpl$InnerBrLookup
+ com.udacity.shoestore.DataBinderMapperImpl$InnerLayoutIdLookup

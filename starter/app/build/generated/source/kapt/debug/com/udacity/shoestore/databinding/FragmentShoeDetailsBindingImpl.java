@@ -21,12 +21,12 @@ public class FragmentShoeDetailsBindingImpl extends FragmentShoeDetailsBinding i
     }
     // views
     @NonNull
-    private final android.widget.LinearLayout mboundView0;
+    private final android.widget.ScrollView mboundView0;
     // variables
     @Nullable
-    private final android.view.View.OnClickListener mCallback4;
+    private final android.view.View.OnClickListener mCallback6;
     @Nullable
-    private final android.view.View.OnClickListener mCallback3;
+    private final android.view.View.OnClickListener mCallback5;
     // values
     // listeners
     // Inverse Binding Event Handlers
@@ -215,12 +215,12 @@ public class FragmentShoeDetailsBindingImpl extends FragmentShoeDetailsBinding i
         this.etSdDescription.setTag(null);
         this.etSdName.setTag(null);
         this.etSdSize.setTag(null);
-        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
+        this.mboundView0 = (android.widget.ScrollView) bindings[0];
         this.mboundView0.setTag(null);
         setRootTag(root);
         // listeners
-        mCallback4 = new com.udacity.shoestore.generated.callback.OnClickListener(this, 2);
-        mCallback3 = new com.udacity.shoestore.generated.callback.OnClickListener(this, 1);
+        mCallback6 = new com.udacity.shoestore.generated.callback.OnClickListener(this, 2);
+        mCallback5 = new com.udacity.shoestore.generated.callback.OnClickListener(this, 1);
         invalidateAll();
     }
 
@@ -314,8 +314,8 @@ public class FragmentShoeDetailsBindingImpl extends FragmentShoeDetailsBinding i
         if ((dirtyFlags & 0x2L) != 0) {
             // api target 1
 
-            this.btSdCancel.setOnClickListener(mCallback4);
-            this.btSdCreate.setOnClickListener(mCallback3);
+            this.btSdCancel.setOnClickListener(mCallback6);
+            this.btSdCreate.setOnClickListener(mCallback5);
             androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.etSdCompany, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, etSdCompanyandroidTextAttrChanged);
             androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.etSdDescription, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, etSdDescriptionandroidTextAttrChanged);
             androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.etSdName, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, etSdNameandroidTextAttrChanged);

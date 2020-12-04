@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="et_min_height">48dp</dimen>
+    <dimen name="tv_labels_size">18sp</dimen>
+    <dimen name="et_text_size">18sp</dimen>
+</resources>

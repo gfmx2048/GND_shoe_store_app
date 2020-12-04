@@ -14,24 +14,32 @@ public class FragmentInstructionBindingImpl extends FragmentInstructionBinding  
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.bt_show_list, 1);
+        sViewsWithIds.put(R.id.iv_logo, 1);
+        sViewsWithIds.put(R.id.tv_title, 2);
+        sViewsWithIds.put(R.id.nsv, 3);
+        sViewsWithIds.put(R.id.tv_description, 4);
+        sViewsWithIds.put(R.id.bt_instructions, 5);
     }
     // views
     @NonNull
-    private final android.widget.LinearLayout mboundView0;
+    private final androidx.constraintlayout.widget.ConstraintLayout mboundView0;
     // variables
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public FragmentInstructionBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 2, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds));
     }
     private FragmentInstructionBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.Button) bindings[1]
+            , (android.widget.Button) bindings[5]
+            , (android.widget.ImageView) bindings[1]
+            , (androidx.core.widget.NestedScrollView) bindings[3]
+            , (android.widget.TextView) bindings[4]
+            , (android.widget.TextView) bindings[2]
             );
-        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
+        this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);
         setRootTag(root);
         // listeners

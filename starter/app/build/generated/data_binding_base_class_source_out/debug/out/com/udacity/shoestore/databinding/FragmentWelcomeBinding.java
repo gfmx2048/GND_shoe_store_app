@@ -9,9 +9,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.udacity.shoestore.R;
+import com.udacity.shoestore.viewmodels.MainActivityViewModel;
 import java.lang.Deprecated;
 import java.lang.Object;
 
@@ -28,6 +30,9 @@ public abstract class FragmentWelcomeBinding extends ViewDataBinding {
   @NonNull
   public final TextView tvTitle;
 
+  @Bindable
+  protected MainActivityViewModel mViewModel;
+
   protected FragmentWelcomeBinding(Object _bindingComponent, View _root, int _localFieldCount,
       Button btInstructions, ImageView ivLogo, TextView tvDescription, TextView tvTitle) {
     super(_bindingComponent, _root, _localFieldCount);
@@ -35,6 +40,13 @@ public abstract class FragmentWelcomeBinding extends ViewDataBinding {
     this.ivLogo = ivLogo;
     this.tvDescription = tvDescription;
     this.tvTitle = tvTitle;
+  }
+
+  public abstract void setViewModel(@Nullable MainActivityViewModel viewModel);
+
+  @Nullable
+  public MainActivityViewModel getViewModel() {
+    return mViewModel;
   }
 
   @NonNull

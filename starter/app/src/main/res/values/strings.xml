@@ -8,8 +8,9 @@
     <string name="login_with_existing_account">Login with existing account</string>
     <string name="shoe_shop_logo">Shoe shop logo</string>
     <string name="or">Or</string>
-    <string name="welcome_title">Welcome to the shoe store app!!!</string>
-    <string name="welcome_description">This is the shoe store app thathat tlalshtsatdh tsjdthask jth atsjdths tj astl kdhtsatjsdat satljhdtshlthjsdat athsdtksadhtkskatds astkjdhksadtskthasd tkahsdkhthjstksahktd astksahdktksathksatksdt</string>
+    <string name="welcome_title">Welcome %s !!!</string>
+    <string name="welcome_description">This is the shoe store app project that was created for the Android Kotlin Developer nanoDegree program. Enjoy!</string>
+    <string name="description_details">The app is consisted by 5 screens.\nOn the first screen you can create a new account or use an existing one.\nAfter seeing 2 information screens (OnBoarding), you enter on the main screen of the app where the app displays a list of default Shoes.\nFrom there you can browse the shoes by scrolling and by pressing the + button you will go to a new screen where you can create a new shoe and put it on the list.\nIn addition, if you want to Logout, you can use the menu from the screen with the list of shoes</string>
     <string name="go_to_instructions">Go to instructions</string>
     <string name="logout">Logout</string>
     <string name="shoe_name">SHOE NAME:</string>
@@ -28,5 +29,7 @@
     <string name="please_add_a_valid_shoe_size">Please add a valid shoe size</string>
     <string name="please_add_a_valid_email">Please add a valid email</string>
     <string name="please_add_a_valid_pwd">Please add a valid password with more than 4 characters</string>
-    <string name="user_does_not_exist">There is not an existing user account. Please create to proceed</string>
+    <string name="user_does_not_exist">There is not an existing user account. Please create one to proceed</string>
+    <string name="how_to_use">How to use</string>
+    <string name="continue_text">Continue</string>
 </resources>

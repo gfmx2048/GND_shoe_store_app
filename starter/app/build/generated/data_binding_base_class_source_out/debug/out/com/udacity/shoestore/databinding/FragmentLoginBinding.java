@@ -38,6 +38,22 @@ public abstract class FragmentLoginBinding extends ViewDataBinding {
   @NonNull
   public final Guideline guideline2;
 
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Guideline guidelineCenter;
+
   @NonNull
   public final ImageView ivLogo;
 
@@ -55,8 +71,8 @@ public abstract class FragmentLoginBinding extends ViewDataBinding {
 
   protected FragmentLoginBinding(Object _bindingComponent, View _root, int _localFieldCount,
       Button btLoginWithExisting, Button btNewLogin, EditText etEmail, EditText etPwd,
-      Guideline guideline, Guideline guideline2, ImageView ivLogo, TextView tvEmail, TextView tvOr,
-      TextView tvPwd) {
+      Guideline guideline, Guideline guideline2, Guideline guidelineCenter, ImageView ivLogo,
+      TextView tvEmail, TextView tvOr, TextView tvPwd) {
     super(_bindingComponent, _root, _localFieldCount);
     this.btLoginWithExisting = btLoginWithExisting;
     this.btNewLogin = btNewLogin;
@@ -64,6 +80,7 @@ public abstract class FragmentLoginBinding extends ViewDataBinding {
     this.etPwd = etPwd;
     this.guideline = guideline;
     this.guideline2 = guideline2;
+    this.guidelineCenter = guidelineCenter;
     this.ivLogo = ivLogo;
     this.tvEmail = tvEmail;
     this.tvOr = tvOr;

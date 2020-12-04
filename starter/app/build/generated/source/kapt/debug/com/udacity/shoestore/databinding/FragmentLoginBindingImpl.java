@@ -118,6 +118,7 @@ public class FragmentLoginBindingImpl extends FragmentLoginBinding implements co
             , (android.widget.EditText) bindings[2]
             , (androidx.constraintlayout.widget.Guideline) bindings[9]
             , (androidx.constraintlayout.widget.Guideline) bindings[10]
+            , null
             , (android.widget.ImageView) bindings[5]
             , (android.widget.TextView) bindings[6]
             , (android.widget.TextView) bindings[8]

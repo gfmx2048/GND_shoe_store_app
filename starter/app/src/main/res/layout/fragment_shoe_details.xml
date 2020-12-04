@@ -8,95 +8,100 @@
             type="com.udacity.shoestore.viewmodels.MainActivityViewModel" />
     </data>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="20dp"
-        tools:context=".screens.ShoeDetailsFragment">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/tv_sd_name"
-            style="@style/tv_label_style"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/shoe_name" />
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            tools:context=".screens.ShoeDetailsFragment">
 
-        <EditText
-            android:id="@+id/et_sd_name"
-            style="@style/et_style"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="@={viewModel.newShoe.name}"
-            android:hint="@string/shoe_name_hint" />
+            <TextView
+                android:id="@+id/tv_sd_name"
+                style="@style/tv_label_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shoe_name" />
 
-        <TextView
-            style="@style/tv_label_style"
-            android:id="@+id/tv_sd_company"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/company" />
+            <EditText
+                android:id="@+id/et_sd_name"
+                style="@style/et_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="@={viewModel.newShoe.name}"
+                android:hint="@string/shoe_name_hint" />
 
-        <EditText
-            android:id="@+id/et_sd_company"
-            style="@style/et_style"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="@={viewModel.newShoe.company}"
-            android:hint="@string/company_hint" />
+            <TextView
+                style="@style/tv_label_style"
+                android:id="@+id/tv_sd_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/company" />
 
-        <TextView
-            android:id="@+id/tv_sd_description"
-            style="@style/tv_label_style"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/description" />
+            <EditText
+                android:id="@+id/et_sd_company"
+                style="@style/et_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="@={viewModel.newShoe.company}"
+                android:hint="@string/company_hint" />
 
-        <EditText
-            android:id="@+id/et_sd_description"
-            style="@style/et_style"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textCapSentences"
-            android:text="@={viewModel.newShoe.description}"
-            android:hint="@string/description_hint" />
+            <TextView
+                android:id="@+id/tv_sd_description"
+                style="@style/tv_label_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/description" />
 
-        <TextView
-            android:id="@+id/tv_sd_size"
-            style="@style/tv_label_style"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/shoe_size" />
+            <EditText
+                android:id="@+id/et_sd_description"
+                style="@style/et_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:text="@={viewModel.newShoe.description}"
+                android:hint="@string/description_hint" />
 
-        <EditText
-            android:id="@+id/et_sd_size"
-            style="@style/et_style"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:maxLines="1"
-            android:hint="@string/shoe_size_hint"
-            android:text="@={`` + viewModel.newShoe.size}"
-            android:inputType="numberDecimal" />
+            <TextView
+                android:id="@+id/tv_sd_size"
+                style="@style/tv_label_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shoe_size" />
 
-        <Button
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="20dp"
-            style="@style/bt_style"
-            android:id="@+id/bt_sd_create"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="@{()->viewModel.saveShoe()}"
-            android:text="@string/create" />
+            <EditText
+                android:id="@+id/et_sd_size"
+                style="@style/et_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:hint="@string/shoe_size_hint"
+                android:text="@={`` + viewModel.newShoe.size}"
+                android:inputType="numberDecimal" />
 
-        <Button
-            style="@style/bt_style"
-            android:background="@color/colorRedToOrange"
-            android:id="@+id/bt_sd_cancel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="@{()->viewModel.close()}"
-            android:text="@string/cancel" />
-    </LinearLayout>
+            <Button
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                style="@style/bt_style"
+                android:id="@+id/bt_sd_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{()->viewModel.saveShoe()}"
+                android:text="@string/create" />
+
+            <Button
+                style="@style/bt_style"
+                android:background="@color/colorRedToOrange"
+                android:id="@+id/bt_sd_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{()->viewModel.close()}"
+                android:text="@string/cancel" />
+        </LinearLayout>
+    </ScrollView>
 </layout>

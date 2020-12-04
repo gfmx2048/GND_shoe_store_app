@@ -14,14 +14,13 @@ public class FragmentWelcomeBindingImpl extends FragmentWelcomeBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.iv_logo, 1);
-        sViewsWithIds.put(R.id.tv_title, 2);
+        sViewsWithIds.put(R.id.iv_logo, 2);
         sViewsWithIds.put(R.id.tv_description, 3);
         sViewsWithIds.put(R.id.bt_instructions, 4);
     }
     // views
     @NonNull
-    private final android.widget.LinearLayout mboundView0;
+    private final androidx.constraintlayout.widget.ConstraintLayout mboundView0;
     // variables
     // values
     // listeners
@@ -33,12 +32,13 @@ public class FragmentWelcomeBindingImpl extends FragmentWelcomeBinding  {
     private FragmentWelcomeBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (android.widget.Button) bindings[4]
-            , (android.widget.ImageView) bindings[1]
+            , (android.widget.ImageView) bindings[2]
             , (android.widget.TextView) bindings[3]
-            , (android.widget.TextView) bindings[2]
+            , (android.widget.TextView) bindings[1]
             );
-        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
+        this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);
+        this.tvTitle.setTag(null);
         setRootTag(root);
         // listeners
         invalidateAll();
@@ -47,7 +47,7 @@ public class FragmentWelcomeBindingImpl extends FragmentWelcomeBinding  {
     @Override
     public void invalidateAll() {
         synchronized(this) {
-                mDirtyFlags = 0x1L;
+                mDirtyFlags = 0x2L;
         }
         requestRebind();
     }
@@ -65,7 +65,22 @@ public class FragmentWelcomeBindingImpl extends FragmentWelcomeBinding  {
     @Override
     public boolean setVariable(int variableId, @Nullable Object variable)  {
         boolean variableSet = true;
+        if (BR.viewModel == variableId) {
+            setViewModel((com.udacity.shoestore.viewmodels.MainActivityViewModel) variable);
+        }
+        else {
+            variableSet = false;
+        }
             return variableSet;
+    }
+
+    public void setViewModel(@Nullable com.udacity.shoestore.viewmodels.MainActivityViewModel ViewModel) {
+        this.mViewModel = ViewModel;
+        synchronized(this) {
+            mDirtyFlags |= 0x1L;
+        }
+        notifyPropertyChanged(BR.viewModel);
+        super.requestRebind();
     }
 
     @Override
@@ -82,14 +97,44 @@ public class FragmentWelcomeBindingImpl extends FragmentWelcomeBinding  {
             dirtyFlags = mDirtyFlags;
             mDirtyFlags = 0;
         }
+        java.lang.String viewModelUserEmail = null;
+        com.udacity.shoestore.viewmodels.MainActivityViewModel viewModel = mViewModel;
+        java.lang.String tvTitleAndroidStringWelcomeTitleViewModelUserEmail = null;
+        com.udacity.shoestore.models.User viewModelUser = null;
+
+        if ((dirtyFlags & 0x3L) != 0) {
+
+
+
+                if (viewModel != null) {
+                    // read viewModel.user
+                    viewModelUser = viewModel.getUser();
+                }
+
+
+                if (viewModelUser != null) {
+                    // read viewModel.user.email
+                    viewModelUserEmail = viewModelUser.getEmail();
+                }
+
+
+                // read @android:string/welcome_title
+                tvTitleAndroidStringWelcomeTitleViewModelUserEmail = tvTitle.getResources().getString(R.string.welcome_title, viewModelUserEmail);
+        }
         // batch finished
+        if ((dirtyFlags & 0x3L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.tvTitle, tvTitleAndroidStringWelcomeTitleViewModelUserEmail);
+        }
     }
     // Listener Stub Implementations
     // callback impls
     // dirty flag
     private  long mDirtyFlags = 0xffffffffffffffffL;
     /* flag mapping
-        flag 0 (0x1L): null
+        flag 0 (0x1L): viewModel
+        flag 1 (0x2L): null
     flag mapping end*/
     //end
 }
