@@ -39,6 +39,12 @@ class ShoeListFragment : Fragment() {
         mBinding.invalidateAll()
     }
 
+    /**
+     *
+     * I could observe here the list of shoes at once and not only the newly added shoe.
+     * But if i do that i need to remove all views and add them again every time the shoeList observer is triggered.
+     *
+     */
     private fun subscribeToLiveData() {
         mViewModel.newShoeLD.observe(viewLifecycleOwner, {
            it?.let{
