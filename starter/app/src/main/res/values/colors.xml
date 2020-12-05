@@ -4,21 +4,14 @@
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#f7931e</color>
 
-    <color name="colorRed">#FF0000</color>
-    <color name="colorInstashopRed">#ee2e5e</color>
     <color name="colorRedToOrange">#ff5349</color>
-
-    <color name="colorGreen">#39b54a</color>
     <color name="colorBlue">#3895D3</color>
 
     <color name="colorPrimaryGray">#8c8c8c</color>
     <color name="colorPrimaryDarkGray">#7f7e7e</color>
     <color name="colorLightGray">#eeeeee</color>
 
-    <color name="colorPrimaryTransparent">#CC8c8c8c</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlack">#000000</color>
 
-    <color name="colorBlackLabel">#1a1a1a</color>
-    <color name="colorOrange">#f7931e</color>
 </resources>

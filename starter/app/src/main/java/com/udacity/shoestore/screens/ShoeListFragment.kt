@@ -41,7 +41,13 @@ class ShoeListFragment : Fragment() {
 
     private fun subscribeToLiveData() {
         mViewModel.newShoeLD.observe(viewLifecycleOwner, {
+           it?.let{
             addViewToLayout(it)
+            //Keep it in memory with the other shoes
+            mViewModel.shoes.add(it)
+            //Clear it from memory, because if we go back and forth, onCreateView will run again and we will have it displayed twice etc
+            mViewModel.clearShoe()
+             }
         })
     }
 
@@ -52,7 +58,7 @@ class ShoeListFragment : Fragment() {
             tv_name.text = shoe.name
             tv_company.text = shoe.company
             tv_description.text = shoe.description
-            tv_size.text = shoe.size.toString()
+            tv_size.text = getString(R.string.size,shoe.size.toString())
             Glide.with(requireActivity().applicationContext).load(ContextCompat.getDrawable(requireContext(),shoe.images[0])).into(iv_image)
         }
         mBinding.llShoesContainer.addView(listItemShoe)

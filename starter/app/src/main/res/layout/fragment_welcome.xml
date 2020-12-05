@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Simple view, we could use linearLayout with weightSum and weights and margins
+   but app:layout_constraintVertical_bias="0.2" can work better here
+-->
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".screens.WelcomeFragment">
 
     <data>
-
         <variable
             name="viewModel"
             type="com.udacity.shoestore.viewmodels.MainActivityViewModel" />

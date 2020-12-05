@@ -18,8 +18,8 @@
 
         <ImageView
             android:id="@+id/iv_logo"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="@dimen/small_icon_dimen"
+            android:layout_height="@dimen/small_icon_dimen"
             android:layout_marginTop="24dp"
             android:contentDescription="@string/shoe_shop_logo"
             android:src="@drawable/ic_shoes"

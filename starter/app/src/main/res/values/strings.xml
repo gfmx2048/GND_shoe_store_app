@@ -32,4 +32,5 @@
     <string name="user_does_not_exist">There is not an existing user account. Please create one to proceed</string>
     <string name="how_to_use">How to use</string>
     <string name="continue_text">Continue</string>
+    <string name="size">Size: %s</string>
 </resources>

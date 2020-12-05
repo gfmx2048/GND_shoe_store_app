@@ -8,6 +8,7 @@
             type="com.udacity.shoestore.viewmodels.MainActivityViewModel" />
     </data>
 
+<!--  I have added a scroll view here for the layout to be usable also for the landScape orientation  -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">

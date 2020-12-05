@@ -12,6 +12,10 @@ import androidx.navigation.ui.setupWithNavController
 import com.udacity.shoestore.databinding.ActivityMainBinding
 import com.udacity.shoestore.viewmodels.MainActivityViewModel
 
+/**
+ *
+ * Will be used only as a container for the fragments and responsible for listening liveData that are common between the fragments. Like hide keyboard or display a Toast
+ */
 class MainActivity : AppCompatActivity() {
     private lateinit var mNavController: NavController
     private val mViewModel: MainActivityViewModel by viewModels()
@@ -27,8 +31,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun subscribeToLiveData() {
-        //This observer will observer the errors from the {LoginFragment.kt} and the {ShoeDetailFragment.kt}
-        //Another way was each fragment observes it's errors.
+        //This observer will observe the errors from the {LoginFragment.kt} and the {ShoeDetailFragment.kt}
+        //Another way was, that each fragment could observes it's errors.
         mViewModel.error.observe(this, {
             it?.let {
                 Toast.makeText(this, getString(it), Toast.LENGTH_SHORT).show()
@@ -36,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
-        //Sam as above
+        //Same as above
         mViewModel.hideKeyboard.observe(this, {
             it?.let {
                 if(it) {
